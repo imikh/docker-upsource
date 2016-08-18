@@ -38,7 +38,7 @@ RUN bin/upsource.sh configure \
     --logs-dir    $APP_HOME/log \
     --temp-dir    $APP_HOME/tmp \
     --listen-port $APP_PORT \
-    --base-url    http://localhost/
+    --base-url    http://localhost:$APP_PORT/
 
 ENTRYPOINT ["bin/upsource.sh"]
 CMD ["run"]
